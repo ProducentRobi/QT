@@ -4,6 +4,7 @@ import QtQuick.Controls 1.4
 import QtQuick.Controls.Styles 1.4
 
 
+
 Item {
 
     id: logowanie
@@ -18,7 +19,7 @@ Item {
             id: zanikanie
             to: 0
             running: false
-            duration: 2000
+            duration: 500
             onFinished:
             {
                 okno = 2
@@ -59,7 +60,6 @@ Item {
             font.family: "Arial"
             font.pointSize: 20
             focus: true
-            textColor: "black"
         }
 
 
@@ -71,6 +71,7 @@ Item {
             font.pointSize: 20
             id: passwordText
             text: qsTr("Podaj Haslo:")
+
         }
 
 
@@ -82,12 +83,10 @@ Item {
             id: password
             width: 350
             height: 50
-            textColor: "black"
             font.family: "Calibri"
             font.pointSize: 20
             focus: true
             echoMode:TextInput.Password
-
         }
 
 
@@ -113,7 +112,7 @@ Item {
 
             onClicked:
             {
-                if (login.displayText === "robi" && password.text === "robi")
+                if (login.displayText === "r" && password.text === "r")
                 {
                     result.visible = true
                     result.color = "white"

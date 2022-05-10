@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>Logowanie.qml</file>
         <file>Menu.qml</file>
+        <file>asd.png</file>
     </qresource>
 </RCC>
